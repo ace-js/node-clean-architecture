@@ -1,5 +1,5 @@
 import { CustomerModel } from "./cutomer.model";
 
-export interface IGetCustomerQuery {
+export interface IGetCustomersQuery {
   execute(): Promise<Array<CustomerModel>>
 }

@@ -1,10 +1,10 @@
 import { Customer } from 'domain/customers/customer';
 
-import { IGetCustomerQuery } from './get-customer-query.interface';
+import { IGetCustomersQuery } from './get-customers-query.interface';
 import { CustomerModel } from './cutomer.model';
 import { IRepository } from './../../interfaces/repository.interface';
 
-export class GetCustomerQuery implements IGetCustomerQuery {
+export class GetCustomersQuery implements IGetCustomersQuery {
   private readonly _repository: IRepository<Customer>;
 
   constructor(repository: IRepository<Customer>){
